@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> TU PESO EN TANGA </title>
+  </head>
+  <body>
+    <h1> Tu peso en otro planeta </h1>
+    <p>En la tierra pesas distinto que en Marte o Jupiter</p>
+  </body>
+  <script>
+  var usuario = prompt("Cual es tu peso?");
+  var peso = parseFloat (usuario);
+  var g_tierra = 9.8;
+  var g_marte = 3.7;
+  var g_jupiter = 24.8;
+  var peso_final_marte;
+  var peso_final_jupiter;
+  peso_final_marte = peso * g_marte / g_tierra;
+    peso_final_marte = parseInt(peso_final_marte);
+    document.write("Tu peso en Marte es <strong>" + peso_final_marte + " kilos </strong>");
+  peso_final_jupiter = peso * g_jupiter / g_tierra
+    peso_final_jupiter = (peso_final_jupiter);
+    document.write("<br/> Tu peso en Jupiter es <strong>"  + peso_final_jupiter + " kilos </strong>");
+  </script>
+
+</html>
